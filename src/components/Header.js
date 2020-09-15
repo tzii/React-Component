@@ -19,19 +19,22 @@ export default class Header extends Component {
         return (
             <header>
                 <div className="brand">
-                    <Link to="/" onClick={this.handleClick}>
+                    <Link to="/Button-Component" onClick={this.handleClick}>
                         <span>Dev</span>Challenges.io
                     </Link>
                 </div>
                 <ul>
                     <li>
-                        <Link to="/Colors" onClick={this.handleClick}>
+                        <Link
+                            to="/Button-Component/Colors"
+                            onClick={this.handleClick}
+                        >
                             Colors
                         </Link>
                     </li>
                     <li>
                         <Link
-                            to="/Typography"
+                            to="/Button-Component/Typography"
                             className="123"
                             onClick={this.handleClick}
                         >
@@ -39,22 +42,34 @@ export default class Header extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Spaces" onClick={this.handleClick}>
+                        <Link
+                            to="/Button-Component/Spaces"
+                            onClick={this.handleClick}
+                        >
                             Spaces
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Buttons" onClick={this.handleClick}>
+                        <Link
+                            to="/Button-Component/Buttons"
+                            onClick={this.handleClick}
+                        >
                             Buttons
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Inputs" onClick={this.handleClick}>
+                        <Link
+                            to="/Button-Component/Inputs"
+                            onClick={this.handleClick}
+                        >
                             Inputs
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Grid" onClick={this.handleClick}>
+                        <Link
+                            to="/Button-Component/Grid"
+                            onClick={this.handleClick}
+                        >
                             Grid
                         </Link>
                     </li>
