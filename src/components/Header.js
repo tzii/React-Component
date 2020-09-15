@@ -5,36 +5,39 @@ import $ from "jquery";
 
 export default class Header extends Component {
     componentDidMount() {
-        $(`header ul>li>a[href="${window.location.pathname}"]`).addClass(
-            "active"
-        );
+        let href = window.location.href;
+        $(
+            `header ul>li>a[href="${
+                "#" + href.substring(href.lastIndexOf("/"))
+            }"]`
+        ).addClass("active");
     }
     handleClick = (e) => {
-        $(`header ul>li>a[href="${window.location.pathname}"]`).removeClass(
-            "active"
-        );
+        let href = window.location.href;
+        $(
+            `header ul>li>a[href="${
+                "#" + href.substring(href.lastIndexOf("/"))
+            }"]`
+        ).removeClass("active");
         e.target.classList.add("active");
     };
     render() {
         return (
             <header>
                 <div className="brand">
-                    <Link to="/Button-Component" onClick={this.handleClick}>
+                    <Link to="/" onClick={this.handleClick}>
                         <span>Dev</span>Challenges.io
                     </Link>
                 </div>
                 <ul>
                     <li>
-                        <Link
-                            to="/Button-Component/Colors"
-                            onClick={this.handleClick}
-                        >
+                        <Link to="/Colors" onClick={this.handleClick}>
                             Colors
                         </Link>
                     </li>
                     <li>
                         <Link
-                            to="/Button-Component/Typography"
+                            to="/Typography"
                             className="123"
                             onClick={this.handleClick}
                         >
@@ -42,34 +45,22 @@ export default class Header extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            to="/Button-Component/Spaces"
-                            onClick={this.handleClick}
-                        >
+                        <Link to="/Spaces" onClick={this.handleClick}>
                             Spaces
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            to="/Button-Component/Buttons"
-                            onClick={this.handleClick}
-                        >
+                        <Link to="/Buttons" onClick={this.handleClick}>
                             Buttons
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            to="/Button-Component/Inputs"
-                            onClick={this.handleClick}
-                        >
+                        <Link to="/Inputs" onClick={this.handleClick}>
                             Inputs
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            to="/Button-Component/Grid"
-                            onClick={this.handleClick}
-                        >
+                        <Link to="/Grid" onClick={this.handleClick}>
                             Grid
                         </Link>
                     </li>

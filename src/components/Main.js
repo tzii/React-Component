@@ -13,25 +13,25 @@ export default class Main extends Component {
         return (
             <main>
                 <Switch>
-                    <Route exact path="/Button-Component">
+                    <Route exact path="/">
                         Home
                     </Route>
-                    <Route path="/Button-Component/Colors">
+                    <Route path="/Colors">
                         <Colors />
                     </Route>
-                    <Route path="/Button-Component/Typography">
+                    <Route path="/Typography">
                         <Typography />
                     </Route>
-                    <Route path="/Button-Component/Spaces">
+                    <Route path="/Spaces">
                         <Spaces />
                     </Route>
-                    <Route path="/Button-Component/Buttons">
+                    <Route path="/Buttons">
                         <Buttons />
                     </Route>
-                    <Route path="/Button-Component/Inputs">
+                    <Route path="/Inputs">
                         <Inputs />
                     </Route>
-                    <Route path="/Button-Component/Grid">
+                    <Route path="/Grid">
                         <Grid />
                     </Route>
                 </Switch>
