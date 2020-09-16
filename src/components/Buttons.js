@@ -119,7 +119,7 @@ export default class Buttons extends Component {
                     </div>
                     <div className="content">
                         <div className="code">
-                            &lt;Button color=" color="secondary" "
+                            &lt;Button color=" color="secondary"
                             startIcon="local_grocery_store"&gt;Default&lt;/Button&gt;
                         </div>
                         <Button
