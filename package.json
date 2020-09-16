@@ -2,7 +2,7 @@
     "name": "component",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://shoji5.github.io/Components/",
+    "homepage": "https://shoji5.github.io/React-Components/",
     "dependencies": {
         "@material-ui/core": "^4.11.0",
         "@testing-library/jest-dom": "^4.2.4",
